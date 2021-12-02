@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;700;800;900&family=Roboto:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 8rem;
+    background-color: #f4f4f4;
+}
+.header{
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.green{
+    color: greenyellow;
+}
+
+.search{
+    width: 50%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid greenyellow;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    padding-bottom: 0.8rem;
+}
+
+section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section{
+    border: 1px solid gray;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.items{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 1px solid gray;
+    padding: 0.8rem 2rem;
+}
+
+.item{
+    font-size: 0.9rem;
+    color: blue;
+}
