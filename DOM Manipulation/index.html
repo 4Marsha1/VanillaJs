@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Manipulation</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="head">
+            <h1 class="header">Item Lister</h1>
+            <input class="search" type="text" placeholder="Search Items" />
+        </div>
+        <section>
+            <h1 class="formHeader">Add Items</h1>
+            <form class="myForm" id='form'>
+                <input id="text-input" class="itemInput" type="text">
+                <!-- <select name="select" id="select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select> -->
+                <button class="btn" type="submit">Submit</button>
+            </form>
+            <h2 class="itemsHeader">Items</h2>
+            <ul class="items">
+                <li class="item">item 1 <button class="delete-btn">X</button> </li>
+                <li class="item">item 2 <button class="delete-btn">X</button></li>
+                <li class="item">item 3 <button class="delete-btn">X</button></li>
+                <li class="item">item 4 <button class="delete-btn">X</button></li>
+            </ul>
+            <!-- <div class="output"></div> -->
+        </section>
+
+        <script src='main.js'></script>
+    </body>
+</html>

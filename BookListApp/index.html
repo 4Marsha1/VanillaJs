@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Book Store</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <span class="header">My<span class="blue">Book</span>List</span>
+        <span class="msg"></span>
+        <form id='addForm' class="form">
+            <label class="label" for="title">Title</label>
+            <input class="input" id="title" type="text"/>
+            <label class="label" for="author">Author</label>
+            <input class="input" id="author" type="text" />
+            <label class="label" for="book">ISBN#</label>
+            <input class="input" id="book" type="text" />
+            <input class="submit-btn" type="submit" placeholder="Submit"/>
+        </form>
+
+        <div class="hr"></div>
+
+        <ul class="items">
+            <li class="item head">
+                <span>Title</span>
+                <span>Author</span>
+                <span>ISBN#</span>
+                <div></div>
+            </li>
+        </ul>
+
+        <script src='main.js'></script>
+    </body>
+</html>
