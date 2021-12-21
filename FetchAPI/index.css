@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;700;800;900&family=Roboto:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+hr{
+    background-color: black;
+    height: 3px;
+}
+
+.btn{
+    background: none;
+    border: none;
+    padding: 0.4rem 2rem;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 2rem;
+}
+
+#form{
+    margin: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.input{
+    width: 90%;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+#output{
+    margin: 2rem 4rem;
+}
+
+ul{
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+
+li{
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
