@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spline+Sans:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.btn{
+    background: none;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 8px #888888;
+    cursor: pointer;
+}
+
+.popup-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(32,32,32,0.7);
+    height: 100vh;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup{
+    width: 50%;
+    height: 50vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2rem;
+
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+.header{
+    padding: 0.4rem 2rem;
+    background-color: orangered;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.close{
+    background: none;
+    color: #ccc;
+    font-size: 2rem;
+    font-weight: 700;
+    border: none;
+}
+
+.close:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.body{
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer{
+    padding: 0.4rem 2rem;
+    background-color: orangered;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 1.2rem 1.2rem;
+}
+
+/* Animation  */
+
+@keyframes modalopen{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
