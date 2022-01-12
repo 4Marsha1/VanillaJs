@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Text-To-Speech</title>
+</head>
+<body>
+    <div class="logo-container">
+        <i class="fas fa-quote-left fa-4x" style="color:white"></i>
+        <i class="fas fa-microphone-alt fa-4x" style="color: white"></i>
+    </div>
+    <span class="title">Text - <span class="subtitle">to</span> - Speech</span>
+    <form id="myForm" class="myForm">
+        <textarea id="text" class="text" placeholder="Type your text here"></textarea>
+        <label class="label" for="rate">
+            <div></div>
+            Rate
+            <span class="rateValue">1</span>
+        </label>
+        <input type="range" min="0.5" max="2" value="1" step="0.1" class="slider" id="rate" />
+        <label class="label" for="pitch">
+            <div></div>
+            Pitch
+            <span class="pitchValue">1</span>
+        </label>
+        <input type="range" min="0" max="2" value="1" step="0.1" class="slider" id="pitch"/>
+        <select class="voices" id="voices"></select>
+        <input type="submit" value="Speak It!" class="btn">
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
