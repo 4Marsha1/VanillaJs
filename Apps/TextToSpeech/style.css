@@ -75,3 +75,15 @@ body{
     font-size: 1.2rem;
     font-weight: 700;
 }
+
+@media screen and (max-width:540px) {
+    .myForm{
+        width: 99%;
+    }
+}
+
+@media (min-width:540px) and (max-width:1200px) {
+    .myForm{
+        width: 60%;
+    }
+}
