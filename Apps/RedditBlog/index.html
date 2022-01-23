@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RedditBlog</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="topBar">Reddit Blogs</div>
+        <form class="form" id="form">
+            <div class="form-group">
+                <label class="label" for="search">Search Reddit</label>
+                <input class="input" type="text" id='search' placeholder="/r">
+            </div>
+            <div class="form-group">
+                <span class="label-2">Sort By:</span>
+                <input class="radio" type="radio" id='relevance' name="sort" value="relevance">
+                <label class="label-2"for="relevance">Relevance</label>
+                <input class="radio" type="radio" id='latest' name="sort" value="new">
+                <label class="label-2"for="latest">Latest</label>
+            </div>
+            <div class="form-group">
+                <label class="label" for="limit">Limit:</label>
+                <select class="input" id="limit">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="25" selected>25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+            <input type="submit" value="Search" class="btn">
+        </form>
+        <div id="output">
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
