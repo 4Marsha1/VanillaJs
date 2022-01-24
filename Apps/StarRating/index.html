@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Star Ratings</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="form-group">
+            <select id="color" class="form-control custom-select">
+                <option value="0" disabled selected>-Select a Color-</option>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Pink">Pink</option>
+            </select>
+        </div>
+        <div class="form-group mt-3">
+            <input type="number" id="rating" class="form-control" step="0.1" max="5" placeholder="Rate 1-5" disabled>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Color</th>
+                    <th>Star Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Red">
+                    <td>Red</td>
+                    <td>
+                        <div class="star-outer">
+                            <div class="star-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="Blue">
+                    <td>Blue</td>
+                    <td>
+                        <div class="star-outer">
+                            <div class="star-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="Green">
+                    <td>Green</td>
+                    <td>
+                        <div class="star-outer">
+                            <div class="star-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="Yellow">
+                    <td>Yellow</td>
+                    <td>
+                        <div class="star-outer">
+                            <div class="star-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="Pink">
+                    <td>Pink</td>
+                    <td>
+                        <div class="star-outer">
+                            <div class="star-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

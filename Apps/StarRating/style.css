@@ -1,0 +1,24 @@
+.star-outer{
+    position: relative;
+    display: inline-block;
+}
+.star-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+}
+.star-outer::before{
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Pro";
+    color: #ccc;
+    font-weight: 900;
+}
+.star-inner::before{
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Pro";
+    color: #f8ce0b;
+    font-weight: 900;
+}
