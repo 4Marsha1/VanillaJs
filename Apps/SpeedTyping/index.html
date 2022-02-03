@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Speed Typer</title>
+</head>
+<body>
+    <div class="container">
+        <span class="header">Type the given word within 
+            <span id="seconds" class="highlight">5</span> seconds!
+        </span>
+        <span class="word" id="current-word">Hello</span>
+        <input type="text" id="word-input" class="input" 
+        placeholder="Start Typing...." autofocus>
+        <span class="message" id="message"></span>
+        <div class="details">
+            <span class="time">Time Left: <span id="time">0</span> </span>
+            <span class="score">Score: <span id="score">0</span> </span>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

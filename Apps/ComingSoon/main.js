@@ -3,7 +3,7 @@ const hours = document.getElementById('hours');
 const mins = document.getElementById('mins');
 const seconds = document.getElementById('seconds');
 
-const targetDate = new Date('July 21, 2022 01:15:00').getTime();
+const targetDate = new Date('April 18, 2022 00:00:00').getTime();
 
 // console.log(date.getFullYear(), date.getHours(), date.getDay(), date.getMinutes(), date.getSeconds());
 
